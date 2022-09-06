@@ -1,0 +1,46 @@
+/* styling for all pages  */
+body{
+background-color: #2d2d2d;
+opacity: 0.8;
+background-image:  repeating-radial-gradient( circle at 0 0, transparent 0, #2d2d2d 24px ), linear-gradient(90deg,gray, #212bef55,rgb(139, 110, 56), #83528c);
+background-size: 400% 400%;
+height: 100vh;
+animation: gradient 300s ease infinite;
+}
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+/* styling for ('/') page */
+
+.container{
+    display: flex;
+    margin-top: 5%;
+    justify-content: space-evenly;
+}
+
+.register,.login{
+    width: 40%;
+}
+
+
+#register_input,#login_input{
+    width: 80%;
+}
+
+#register_form,#login_form,#dashboard{
+    padding: 20px;
+    border-radius: 20px;
+}
+
+#logout{
+	margin-left: 35%;
+}
